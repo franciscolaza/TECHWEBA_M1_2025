@@ -1,8 +1,9 @@
+require('dotenv').config(); 
 const express = require('express');
 const router = express.Router();
-const connection = require('../db')
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-
+const Stripe = require('stripe');
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const connection = require('../db');
 /**
  * @swagger
  * tags:

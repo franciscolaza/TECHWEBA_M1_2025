@@ -28,7 +28,7 @@ function Home() {
                 setLoading(false);
             });
     }, []);
-    if (loading) return <p>Chargement...</p>;
+    if (loading) return <p className='text-center'>Chargement...</p>;
 
 
 

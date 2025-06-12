@@ -71,7 +71,7 @@ function Produit({ onCartChange }) {
         toast.success(`${currentProduit.name} ajouté au panier !`);
     }
 
-    if (!currentProduit) return <div>Chargement...</div>;
+    if (!currentProduit) return <div className='text-center'>Chargement...</div>;
 
     return (
         <>
