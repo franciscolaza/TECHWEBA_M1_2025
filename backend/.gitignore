@@ -1,0 +1,12 @@
+# Ignorer le dossier node_modules
+node_modules/
+
+# Ignorer les logs
+*.log
+
+# Ignorer les fichiers de build (ex: React build)
+build/
+dist/
+
+# Ignorer les fichiers secrets (ex: .env)
+.env
